@@ -1,6 +1,7 @@
 .nav {
-  padding: 1rem 0;
-  margin: 2rem 0;
+  padding: 1rem 0 1.5rem 0;
+  margin: .5rem 0 5rem 0;
+  box-shadow: 0px 20px 20px 0px rgb(93 54 255 / 38%);
 }
 
 @media (max-width: 600px) {

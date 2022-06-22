@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: rgba(93, 54, 255, 0.02);
 }
 
 a {
@@ -19,15 +20,34 @@ img {
   max-width: 100%;
 }
 
-button {
+button, .snipcart-button-primary {
   color: white;
   font-size: 1em;
   font-weight: bold;
-  background-color: #0070f3;
+  background-color: rgb(93 54 255 / 68%);
   padding: .4em .6em;
   border: none;
   border-radius: .4em;
   cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+button:hover, .snipcart-button-primary:hover{
+  background-color: #fe1717;
+  /*background-color: #f87676;*/
+  transform: scale(1.05);
+  margin-left: .3rem;
+  padding-left: 1.1rem;
+}
+
+.snipcart-button-link:hover{
+  color: #fe1717;
+  margin-left: unset;
+  padding-left: unset;
+}
+
+.snipcart-cart-header__close-button, .snipcart-modal__close:hover{
+  background-color: rgba(0,0,0,0);
 }
 
 .sr-only {
@@ -40,21 +60,8 @@ button {
   height: 0;
 }
 
-p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100%;
+@media (min-width: 768px){
+  .snipcart-cart-summary--edit.snipcart-modal__container{
+    background: #000;
+  }
 }
-
-/*@media (min-width: 1024px){*/
-/*  .snipcart-cart__footer-col {*/
-/*    width: 100%;*/
-/*  }*/
-/*}*/
-
-/*#snipcart.snipcart .snipcart-modal__container {*/
-/*  max-width: calc(60% + 1px);*/
-/*  left: unset;*/
-/*  right: 0;*/
-/*}*/

@@ -10,3 +10,7 @@
 .productImage {
   max-width: 50%;
 }
+
+.productDetails p{
+  max-width: 40ch;
+}

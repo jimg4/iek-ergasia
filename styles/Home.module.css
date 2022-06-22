@@ -21,7 +21,11 @@
   text-decoration: none;
   border: 1px solid #b9b9b9;
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: color 0.15s ease, border-color 0.15s ease, transform 250ms ease-in-out;
+}
+
+.card:hover{
+  transform: scale(1.05);
 }
 
 .card h3 {
@@ -33,7 +37,12 @@
   font-size: 1rem;
   line-height: 1.5;
   margin: .8em 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
+
 
 .card img {
   height: 10em;

@@ -16,7 +16,7 @@ export default function Home() {
     const path = "products"
     const options = {
       method: "GET",
-      url: `https://dummyjson.com/${path}/?limit=15`,
+      url: `https://dummyjson.com/${path}/?limit=12&skip=1`,
     };
     if (sessionStorage.getItem(path)) {
       setLoading(false);
