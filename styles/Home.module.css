@@ -21,11 +21,12 @@
   text-decoration: none;
   border: 1px solid #b9b9b9;
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease, transform 250ms ease-in-out;
+  transition: color 0.15s ease, border-color 0.15s ease, transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
 }
 
 .card:hover{
   transform: scale(1.05);
+  box-shadow: 1px 1px 20px 10px rgb(93 54 255 / 38%);
 }
 
 .card h3 {
