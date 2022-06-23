@@ -14,7 +14,7 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
           <script async src="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.js" />
-          <div hidden id="snipcart" data-api-key="MGFmYzdiYTEtZjNkYi00ZjMyLThmOTAtYjFmYzM3ZGU4ZGU4NjM3OTE1MTE2MTE4NTQ2NzU4" data-config-modal-style="side"/>
+          <div hidden id="snipcart" data-api-key={process.env.NEXT_PUBLIC_SNIPCART_API_KEY} data-config-modal-style="side"/>
         </body>
       </Html>
     )
